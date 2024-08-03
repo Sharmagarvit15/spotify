@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+ }
+ body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+.sidebar{
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top:0;
+    left: 0px;
+    bottom:0;
+    padding: 10px ;
+}
+ .sidebarnav{
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 20px 10px; 
+    margin-bottom: 10px;
+ }
+.sidebarnav .logo{
+    width: 120px;
+} 
+.sidebarnav .logo img{
+    width: 100%;
+}
+.sidebarnav ul{
+    list-style: none;
+  
+}
+.sidebarnav ul li{ 
+   padding: 10px 20px;
+     
+ }
+ .sidebarnav ul li a:hover{ 
+   color: white;
+      
+  }
+.sidebarnav ul li a{
+    text-decoration: none;
+    color:#b3b3b3 ;
+font-size: 18px;
+font-weight: 600px;
+
+}
+.sidebarnav ul li a i{
+    font-size: 20px;
+margin-right: 10px;
+
+}
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+
+    border-radius: 50%;
+    font-size: 15px;
+}
+.b1{
+    background-color: #1f1f1f;
+   
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+.b2{
+    background-color: #1f1f1f;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+ .scroll{
+    height: 130px;
+    overflow-y: auto; 
+} 
+ .scroll::-webkit-scrollbar{
+   background: transparent;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 10px;
+ } 
+ .scroll:hover::-webkit-scrollbar-thumb{
+    background: #6d6d6d;
+    width: 5px;
+ }
+ .b1 h4{
+color: white;
+font-size: 15px;
+ }
+ .b1 p{
+    color: white;
+    font-size: 12px;
+    margin: 12PX 0;
+     }
+     .b1 button{
+       padding: 8PX 15PX;
+       border: 0px;
+       outline: 0px;
+       border-radius: 20px;
+       font-weight: 600;
+       margin-bottom: 8px;
+         }
+
+         .b2 h4{
+            color: white;
+            font-size: 15px;
+             }
+             .b2 p{
+                color: white;
+                font-size: 12px;
+                margin: 12PX 0;
+                 }
+                 .b2 button{
+                   padding: 8PX 15PX;
+                   border: 0px;
+                   outline: 0px;
+                   border-radius: 20px;
+                   font-weight: 600;
+                   margin-bottom: 10px;
+      }
+
+    .priv ul li a{
+        text-decoration: none;
+        color: #818080;
+        font-size: 12px;
+        font-weight: 600;
+        margin:  0 6px;
+
+    }  
+    .priv ul li a:hover{
+        text-decoration: underline;
+      color: #d4d1d1;
+
+    }  
+    
+    .priv ul{
+    list-style: none;
+    margin-top: 20px;
+    }
+ .priv ul li{
+    padding: 0 12px;
+    padding-bottom: 8px;
+     
+ }
+ .engb{
+    padding: 20px 30px;
+ }
+ .engb button{
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    border: 1px solid #818080;
+    border-radius: 20px;
+    margin: 20px 0;
+ }
+ .engb button:hover{
+    padding: 11px 31px;
+    border: 1px solid #fff;
+ }
+  
+
+
+
+
+
+
+
+
+ .mainsec{
+    margin-left: 400px;
+    background:#1d1d1d;
+    height: 100vh;
+    overflow: auto;
+ }
+ .mainsec .topnav{
+    padding: 20px 30px;
+    background:#121212;
+display: flex;
+align-items: center;
+justify-content: space-between;
+ }
+ .mainsec .topnav button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+ }
+ .mainsec .topnav .prevbtn button i{ 
+ color: rgb(140, 136, 136);
+ font-size: 22px;
+ margin-right: 20px;
+ }
+.topnav .loginbtn .signup{
+    color: #838181;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 25px;
+}
+.topnav .loginbtn .signup:hover{
+
+color: white;}
+.topnav .loginbtn .login{
+    background-color: white;
+    color: #3d3c3c;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.topnav .loginbtn .login:hover{
+font-size: 17px;
+  background-color: #e5e3e3;
+color: black;}
+
+
+
+
+
+
+
+    .spotifyplaylist{
+        padding: 20px 40px;
+    }
+    .spotifyplaylist h2{
+        color: white;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .spotifyplaylist .card{
+        display: flex;
+        gap: 20px;
+     overflow: hidden;
+
+    }
+    
+    .spotifyplaylist .card .item{
+        width: 190px;
+        min-width: 140px;
+        background-color: #242323;
+        cursor: pointer;
+        border-radius: 6px;
+        padding: 15px;
+    }
+    .spotifyplaylist .card .item:hover{
+    background-color: #383636;
+    }
+    .spotifyplaylist .card .item img{
+     width: 100%;
+     border-radius: 10px;
+     margin-bottom: 10px;
+    }
+    .circle .card .item img{
+        border-radius: 50%;
+    }
+   
+    .spotifyplaylist .item h4{
+        color: white;
+    }
+    .spotifyplaylist .item p{
+        color: rgb(179, 173, 173);
+        font-size: 13px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    .spotifyplaylist .item p:hover{
+     text-decoration: underline;
+    }
+    .spotifyplaylist .playbtn{
+        position: relative;
+
+    }
+    .spotifyplaylist .playbtn i{
+        position: absolute;
+        background: rgb(96, 203, 96);
+        border-radius: 50%;
+        padding: 10px;
+        right: 8px;
+        top: -40px; 
+        opacity: 0; 
+        transform: 0.4s ease all;   
+    
+}
+        .spotifyplaylist .card .item:hover .playbtn i{
+                opacity: 1;
+                transform: translateY(-3px);
+    }
+
+    .spotifyplaylist .playbtn i:hover{
+        font-size: 18px;
+      
+    
+    }
+
+
+
+
+
+
+
+
+.footersec{
+    padding: 20px 40px;
+}
+
+.footersec .footer{
+   display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footersec .footer .footerlink{
+    display: flex;
+    justify-content: space-evenly;
+     gap: 50px;
+}
+.footersec .footer .footerlink .footercol{
+   margin: 0 12px;
+
+}
+.footersec .footer .footerlink div {
+   color: white;
+   font-weight: 600;
+   margin-bottom: 12px;
+   font-size: 16px;
+ }
+ .footersec .footer .footerlink ul li{
+ list-style: none;
+ margin: 6px 0;
+ }
+ .footersec .footer .footerlink ul li a{
+   text-decoration: none;
+   color: #969393;
+   font-size: 14px;
+   cursor: pointer;
+ }
+    .footersec .footer .footerlink ul li a:hover{
+       text-decoration: underline;
+       color: white;
+    } 
+    .footer .sociallink i{
+        color: white;
+        background: #353434;
+        padding: 12px;
+        border-radius: 50px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .footer .sociallink i:hover{
+        
+        background: #777676;
+       
+    }
+         
+    hr{
+        margin: 20px 40px;
+     
+        border: 0;
+        outline: 0;
+        border: 1px solid #3d3c3c;
+        margin-top: 40px;
+    }
+    .copyright{
+        padding: 0 40px;
+        color: #969393;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+    .preview{
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(to right, #ae2896, #509bf5);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 12px 40px;
+    }
+    .preview h4{
+        font-size: 13px;
+        font-weight: 600px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .preview p{
+        font-size: 16px;
+        font-weight: 400px;
+      
+        color: white;
+    }
+    .preview button{
+        padding: 12px 30px;
+        border: 0;
+        outline: 0;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+    }
